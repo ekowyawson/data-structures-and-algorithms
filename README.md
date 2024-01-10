@@ -20,4 +20,5 @@ To run your tests
 
 ### Table of Contents
 
-[Class 01: Reverse an array](./python/docs/array_reverse/README.md)
+[Class 01: Reverse An Array](./python/docs/array_reverse/README)
+[Class 02: Insert-Shift An Array](./python/docs/array_insert_shift/README)
