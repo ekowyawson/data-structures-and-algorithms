@@ -22,3 +22,4 @@ To run your tests
 
 - [Class 01: Reverse An Array](./python/docs/array_reverse/README.md)
 - [Class 02: Insert-Shift An Array](./python/docs/array_insert_shift/README.md)
+- [Class 03: Array Binary Search](./python/docs/array_binary_search/README.md)
