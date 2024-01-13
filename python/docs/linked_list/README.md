@@ -4,7 +4,9 @@
 
 In this challenge, we create a **`Node`** class that has properties for the value stored in
 the Node, and a pointer to the next Node. We then create a **Linked List** class that includes
-a **`head`** property. Upon instantiation, an empty Linked List should be created.
+a **`head`** property. Upon instantiation, an empty Linked List should be created. The linked
+list has three methods: **insert** - which inserts a node, **includes** - which checks for the existence
+of a specific node, and **to_string** - which converts the list to a string.
 
 [Link to code](./linked_lists/linked_list.py)
 
