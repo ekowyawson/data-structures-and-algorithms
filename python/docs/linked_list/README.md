@@ -1,8 +1,12 @@
 # Code Challenge: Linked List
 
-In this challenge, we create a **`Node`** class that has properties for the value stored in the Node, and a pointer to the next Node. We then create a **Linked List** class that includes a **`head`** property. Upon instantiation, an empty Linked List should be created.
+![Alt text](image.png)
 
-[Link to code](./list_reverse.py)
+In this challenge, we create a **`Node`** class that has properties for the value stored in
+the Node, and a pointer to the next Node. We then create a **Linked List** class that includes
+a **`head`** property. Upon instantiation, an empty Linked List should be created.
+
+[Link to code](./linked_lists/linked_list.py)
 
 ## Whiteboard Process
 
@@ -10,75 +14,117 @@ In this challenge, we create a **`Node`** class that has properties for the valu
 
 ## Approach & Efficiency
 
-The code defines a function `reverseArray` that takes an input list (`arr`) and returns a
-new list containing the elements of the input list in reverse order. The approach taken
-here is to iterate through the input list in reverse using a `for` loop and append each
-element to a new list (`reversed_array`).
+### Explanation
 
-### Explanation:
+I implemented a basic **singly linked list** using a class-based approach as was required.
+The choice of this approach and its implications in terms of time and space complexity are
+as follows:
 
-The loop iterates over the range `len(arr) - 1` to `0` (inclusive) with a step of `-1`,
-effectively traversing the input list in reverse order.
+- **Data Structure Choice**: The linked list is well-suited for situations where elements are
+  frequently inserted or removed. By choosing a linked list, we avoid the overhead of resizing,
+  which is common in *array-based* structures like Python lists.
 
-For each index `i` in the reversed range, the corresponding element at index `i` in the
-input list (`arr`) is appended to the `reversed_array`.
+- **Data Classes**: I used Python's `@dataclass` decorator to simplify the class definitions. This
+  feature automatically generates common methods like `__init__` and `__repr__`, reducing boilerplate
+  code and enhancing readability.
 
-### Big O Time Complexity:
+- **Singly Linked List**: Each node has a **value** and a **pointer** to the next node, but not to the
+  previous one, making it a ***singly linked list***. This design is simpler and uses less memory per node
+  compared to a ***doubly linked list***, but at the cost of some operations *(like backwards traversal)*.
 
-The time complexity of this approach is `O(n)`, where `n` is the length of the input list (`arr`).
-This is because the loop iterates through each element in the input list once, and the time
-required for each iteration is constant.
+### Big O Time Complexity
 
-### Big O Space Complexity:
+#### Insert
 
-The space complexity is also `O(n)` because a new list (`reversed_array`) is created to store the
-reversed elements, and its size is directly proportional to the size of the input list.
+The `insert` method has **O(1)** time complexity. Inserting a new element at the head of the list involves only
+a few **constant-time** operations, regardless of the list's size.
+
+#### Includes
+
+The `includes` method has **O(n)** time complexity, where **n** is the number of elements in the list. In the worst
+case, it needs to traverse the entire list to find the value or determine it's not present.
+
+#### To String
+
+The `to_string` method also has **O(n)** time complexity, as it traverses the entire list to construct the string
+representation.
+
+### Big O Space Complexity
+
+The space complexity of the linked list is **O(n)**, where **n** is the number of elements in the list. Each element
+in the list requires space for the node object (*storing the value and the pointer to the next node*).
 
 ## Solution
 
-To run the code, you would first define a list variable, then pass that variable as a parameter to
-the `reverseArray` function.
+To run the code, you would do the following:
 
-Examples:
+1. Instantiate a `LinkedList` object by assigning it to a variable:`linked_list = LinkedList()`.
+2. Add values to the linked list instance by calling the `insert` method: `linked_list.insert(1)`.
+3. Check to see if the list contains a value by calling the `includes` method: `linked_list.includes(24)`.
+4. Convert the linked list to a string (to print to the console, etc.,) by calling the `to_string` method on the object.
+
+### Example Usage
 
 ```python
-def reverseArray(arr):
-    if isinstance(arr, list):
-        reversed_array = []
-        for i in range(len(arr) - 1, -1, -1):
-            reversed_array.append(arr[i])
-        return reversed_array
-    raise TypeError(f"ERROR: Argument passed must be of type 'list'")
+# Example usage of the LinkedList class
+linked_list = LinkedList()
+linked_list.insert(3)
+linked_list.insert(2)
+linked_list.insert(1)
 
-# Example 1:
-my_list1 = [1, 2, 3, 4, 5]
-print("Example 1:", reverseArray(my_list1))
-
-# Example 2:
-my_list2 = ["apple", "banana", "cherry", "date", "fig", "grape", "kiwi"]
-print("Example 2:", reverseArray(my_list2))
-
-# Example 3:
-my_list3 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-print("Example 3:", reverseArray(my_list3))
+print("Linked List:", linked_list.to_string())
+print("Includes 2:", linked_list.includes(2))
+print("Includes 4:", linked_list.includes(4))
 ```
 
 Output:
 
 ```bash
-python3 list_reverse.py
-Example 1: [5, 4, 3, 2, 1]
-Example 2: ['kiwi', 'grape', 'fig', 'date', 'cherry', 'banana', 'apple']
-Example 3: [100, 90, 80, 70, 60, 50, 40, 30, 20, 10]
+Linked List: { 1 } -> { 2 } -> { 3 } -> NULL
+Includes 2: True
+Includes 4: False
 ```
 
 - [x] Top-level README “Table of Contents” is updated
 - [x] README for this challenge is complete
-  - Summary, Description, Approach & Efficiency, Solution
-  - Picture of whiteboard
-  - Link to code
+  - [x] Summary, Description, Approach & Efficiency, Solution
+  - [x] Picture of whiteboard
+  - [x] Link to code
 - [x] Feature tasks for this challenge are completed
-- [ ] Unit tests written and passing
-  - [ ] “Happy Path” - Expected outcome
-  - [ ] Expected failure
-  - [ ] Edge Case (if applicable/obvious)
+- [x] Unit tests written and passing
+  - [x] “Happy Path” - Expected outcome
+  - [x] Expected failure
+  - [x] Edge Case (if applicable/obvious)
+
+## About Pytest Fixtures
+
+### Fixture Definition
+
+The `@pytest.fixture` decorator marks the `linked_list()` function as a **fixture**. It creates
+a new `LinkedList` instance for each test that requests it.
+
+### Fixture Usage
+
+Test functions now include linked_list as an argument. Pytest automatically calls the fixture
+function and passes its return value (the LinkedList instance) to the test function.
+
+### Benefits
+
+- **Reusability**: The *linked_list fixture* is reused across multiple tests, reducing code duplication.
+- **Setup Isolation**: Each test gets a fresh, independent LinkedList instance, ensuring tests don't interfere with each other.
+- **Readability**: Tests become more focused on the specific behavior being tested, as setup logic is handled in the fixture.
+- **Maintainability**: Changes to the setup process can be made in one place (*the fixture*), rather than in multiple test functions.
+
+```python
+@pytest.fixture
+def linked_list():
+    """Creates a new linked list instance for each test."""
+    return LinkedList()
+
+def test_insert_single(linked_list):
+    """Tests the insertion of a single element."""
+    linked_list.insert(1)
+    assert linked_list.head.value == 1
+    assert linked_list.head.next is None
+#...
+```
