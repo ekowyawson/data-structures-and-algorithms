@@ -134,17 +134,17 @@ class LinkedList:
         return ''.join(values) + 'NULL'
 
 # Example usage of the LinkedList class
-linked_list = LinkedList()
-linked_list.insert({'meat':'crab','veggie':'broccoli'})
-linked_list.insert(3)
-linked_list.insert(2)
-linked_list.insert(1)
-linked_list.append(10)
+# linked_list = LinkedList()
+# linked_list.insert({'meat':'crab','veggie':'broccoli'})
+# linked_list.insert(3)
+# linked_list.insert(2)
+# linked_list.insert(1)
+# linked_list.append(10)
 # linked_list.insert_before(10, 5)
 # linked_list.insert_after(10, 15)
 # linked_list.insert_after(15, 25)
 # linked_list.insert_before(5, 3)
 
-print("Linked List:", linked_list.to_string())
-print("Includes 2:", linked_list.includes(2))
-print("Includes 4:", linked_list.includes(4))
+# print("Linked List:", linked_list.to_string())
+# print("Includes 2:", linked_list.includes(2))
+# print("Includes 4:", linked_list.includes(4))
