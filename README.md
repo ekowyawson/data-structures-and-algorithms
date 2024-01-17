@@ -25,3 +25,4 @@ To run your tests
 - [Class 03: Array Binary Search](./python/docs/array_binary_search/README.md)
 - [Class 04: Technical Interview](./python/docs/tech_interview/README.md)
 - [Class 05: Linked List](./python/docs/linked_list/README.md)
+- [Class 06: Linked List Insertions](./python/docs/linked_list_insertions/README.md)
