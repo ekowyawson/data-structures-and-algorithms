@@ -28,3 +28,4 @@ To run your tests
 - [Class 06: Linked List Insertions](./python/docs/linked_list_insertions/README.md)
 - [Class 07: Linked List kth](./python/docs/linked_list_kth/README.md)
 - [Class 08: Linked List Insertions](./python/docs/linked_list_zip/README.md)
+- [Class 10: Stack and Queue](./python/docs/stack_and_queue/README.md)
