@@ -26,3 +26,5 @@ To run your tests
 - [Class 04: Technical Interview](./python/docs/tech_interview/README.md)
 - [Class 05: Linked List](./python/docs/linked_list/README.md)
 - [Class 06: Linked List Insertions](./python/docs/linked_list_insertions/README.md)
+- [Class 07: Linked List kth](./python/docs/linked_list_kth/README.md)
+- [Class 08: Linked List Insertions](./python/docs/linked_list_zip/README.md)
