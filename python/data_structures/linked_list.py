@@ -1,4 +1,3 @@
-#!/bin/python3
 # from dataclasses import dataclass
 
 class TargetError(Exception):

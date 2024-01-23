@@ -1,5 +1,5 @@
-from stack_and_queue.linked_list import Node
-from stack_and_queue.invalid_operation_error import InvalidOperationError
+from data_structures.linked_list import Node
+from data_structures.invalid_operation_error import InvalidOperationError
 
 class Queue:
     """
