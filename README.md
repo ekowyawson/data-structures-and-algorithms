@@ -29,3 +29,4 @@ To run your tests
 - [Class 07: Linked List kth](./python/docs/linked_list_kth/README.md)
 - [Class 08: Linked List Insertions](./python/docs/linked_list_zip/README.md)
 - [Class 10: Stack and Queue](./python/docs/stack_and_queue/README.md)
+- [Class 11: Stack, Queue, Pseudo](./python/docs/stack_queue_pseudo/README.md)
