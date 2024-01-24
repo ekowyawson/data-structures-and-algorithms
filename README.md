@@ -30,3 +30,4 @@ To run your tests
 - [Class 08: Linked List Insertions](./python/docs/linked_list_zip/README.md)
 - [Class 10: Stack and Queue](./python/docs/stack_and_queue/README.md)
 - [Class 11: Stack, Queue, Pseudo](./python/docs/stack_queue_pseudo/README.md)
+- [Class 12: Stack, Queue, Animal Shelter](./python/docs/stack_queue_animal_shelter/README.md)
