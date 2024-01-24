@@ -1,9 +1,9 @@
-from data_structures.queue import Queue
-from data_structures.invalid_operation_error import InvalidOperationError
-
+from stack_queue_animal_shelter.queue import Queue
+from stack_queue_animal_shelter.invalid_operation_error import InvalidOperationError
 
 class Dog:
     """Represents a dog in the animal shelter.
+
     Attributes:
         name (str): The name of the dog.
         species (str): The species of the animal, which is "dog" for this class.
@@ -13,7 +13,9 @@ class Dog:
         self.species = "dog"
 
 class Cat:
-    """Represents a cat in the animal shelter.
+    """
+    Represents a cat in the animal shelter.
+
     Attributes:
         name (str): The name of the cat.
         species (str): The species of the animal, which is "cat" for this class.
@@ -23,7 +25,9 @@ class Cat:
         self.species = "cat"
 
 class AnimalShelter:
-    """Manages an animal shelter that holds only dogs and cats.
+    """
+    Manages an animal shelter that holds only dogs and cats.
+
     Attributes:
         dog_queue (Queue): A queue to manage dogs in the shelter.
         cat_queue (Queue): A queue to manage cats in the shelter.
@@ -38,9 +42,12 @@ class AnimalShelter:
         self.order = 0
 
     def enqueue(self, animal):
-        """Adds an animal to the shelter.
+        """
+        Adds an animal to the shelter.
+
         Args:
             animal (Dog or Cat): The animal to be added to the shelter.
+
         Raises:
             ValueError: If the animal is neither a dog nor a cat.
         """
@@ -55,9 +62,12 @@ class AnimalShelter:
             raise ValueError("Animal must be either a dog or a cat")
 
     def dequeue_any(self):
-        """Dequeues the animal that has been in the shelter the longest.
+        """
+        Dequeues the animal that has been in the shelter the longest.
+
         Returns:
             Dog or Cat: The animal that has been waiting the longest.
+
         Raises:
             InvalidOperationError: If the shelter is empty.
         """
@@ -76,9 +86,12 @@ class AnimalShelter:
             return self.dequeue_cat()
 
     def dequeue_dog(self):
-        """Dequeues a dog from the shelter.
+        """
+        Dequeues a dog from the shelter.
+
         Returns:
             Dog: The dog that is at the front of the dog queue.
+
         Raises:
             InvalidOperationError: If there are no dogs in the shelter.
         """
@@ -87,9 +100,12 @@ class AnimalShelter:
         return self.dog_queue.dequeue()
 
     def dequeue_cat(self):
-        """Dequeues a cat from the shelter.
+        """
+        Dequeues a cat from the shelter.
+
         Returns:
             Cat: The cat that is at the front of the cat queue.
+
         Raises:
             InvalidOperationError: If there are no cats in the shelter.
         """
@@ -98,11 +114,15 @@ class AnimalShelter:
         return self.cat_queue.dequeue()
 
     def dequeue(self, pref):
-        """Dequeues an animal based on the given preference.
+        """
+        Dequeues an animal based on the given preference.
+
         Args:
             pref (str): The preferred species to dequeue ("dog", "cat", or "any").
+
         Returns:
             Dog or Cat: The dequeued animal based on the preference.
+
         Raises:
             InvalidOperationError: If there is no animal of the preferred type in the shelter.
         """
