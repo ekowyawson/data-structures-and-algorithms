@@ -31,3 +31,4 @@ To run your tests
 - [Class 10: Stack and Queue](./python/docs/stack_and_queue/README.md)
 - [Class 11: Stack, Queue, Pseudo](./python/docs/stack_queue_pseudo/README.md)
 - [Class 12: Stack, Queue, Animal Shelter](./python/docs/stack_queue_animal_shelter/README.md)
+- [Class 13: Stack, Queue, Brackets](./python/docs/stack_queue_brackets/README.md)
