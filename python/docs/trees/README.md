@@ -1,4 +1,4 @@
-# Code Challenge 14: Trees
+# Code Challenge 16: Trees
 
 ## Problem Domain
 
@@ -9,6 +9,12 @@ The task is to implement a BinaryTree class with **depth-first** traversal metho
 ## Whiteboard Process
 
 ![Whiteboard](image.png)
+
+### Version 2:
+
+The task is to implement a method that searches and returns the Maximum Value in a Binary Tree.
+
+![Find Max Value Diagram](image-1.png)
 
 ## Approach & Efficiency
 
@@ -25,6 +31,10 @@ The `BinaryTree` class implements standard **depth-first** traversals, essential
 - **add**: Inserts a value into the tree, maintaining the binary search tree property.
 - **contains**: Checks if a value is present in the tree.
 
+### Find Maximum Value Tests
+
+- **return**: Element with largest value.
+
 ### Big O Space/Time Complexity
 
 - **BinaryTree Traversal**
@@ -35,6 +45,13 @@ The `BinaryTree` class implements standard **depth-first** traversals, essential
   - **Add Time Complexity**: `O(log n)` on average, `O(n)` in the worst case.
   - **Contains Time Complexity**: `O(log n)` on average, `O(n)` in the worst case.
   - **Space Complexity**: `O(1)` for both operations, not considering the stack space for recursion.
+
+- **Find_Maximum_Value Function**
+  - **Time Complexity**: The time complexity remains `O(n)`, where `n` is the number of nodes in the tree.
+    - Each node is visited once during the traversal to compare its value.
+  - **Space Complexity**: The space complexity is `O(h)`, where `h` is the height of the tree. This is due
+    to the recursive stack space used during the depth-first traversal.
+    - In a balanced tree, this would be `O(log n)`, but in the worst case (a completely unbalanced tree), it could be `O(n)`.
 
 ## Test Cases
 
@@ -48,6 +65,10 @@ The `BinaryTree` class implements standard **depth-first** traversals, essential
 
 - Test **adding** elements.
 - Test **checking** for element presence.
+
+### Find Maximum Value Tests
+
+- Test **checking** for element with largest value.
 
 ## Solution & Example Usage
 
@@ -103,6 +124,11 @@ The `BinaryTree` class implements standard **depth-first** traversals, essential
       `bst.contains(0)`,
    - Process: Checks whether the binary search tree contains a given value.
    - Output: `True` or `False` respective of value presence.
+
+9. **Find Maximum Value**:
+   - Input: `bst.find_maximum_value()`
+   - Process: Recurses through binary tree to find maximum value by comparing current max to nodes.
+   - Output: `The maximum value` or `None` respective of the tree's existence.
 
 ### Checklist
 

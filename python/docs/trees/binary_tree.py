@@ -91,6 +91,35 @@ class BinaryTree:
             values.append(node.value)
         return values
 
+    def find_maximum_value(self, node=None):
+        """Find and return the maximum value stored in the binary tree.
+        This method traverses the tree using a depth-first approach, starting from the root
+        and recursively checking each node's value to find the maximum. It avoids storing all
+        values, thus reducing space complexity.
+
+        Args:
+            `node` (Node, optional): The current node being checked. Defaults to self.root.
+        Returns:
+            `int` or `None`: The maximum value found in the tree, or None if the tree is empty.
+        """
+        if node is None:
+            node = self.root
+
+        if node is None:
+            return None
+
+        # Start with the root node's value as the maximum
+        max_value = node.value
+        # Recursively find the maximum in the left subtree
+        if node.left is not None:
+            max_left = self.find_maximum_value(node.left)
+            max_value = max(max_value, max_left)
+        # Recursively find the maximum in the right subtree
+        if node.right is not None:
+            max_right = self.find_maximum_value(node.right)
+            max_value = max(max_value, max_right)
+        return max_value
+
 
 class BinarySearchTree(BinaryTree):
     """Binary Search Tree class, a subclass of BinaryTree, with additional methods for insertion and search."""

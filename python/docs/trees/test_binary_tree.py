@@ -1,5 +1,5 @@
 import pytest
-from trees.trees import Node, BinaryTree, BinarySearchTree
+from trees.binary_tree import Node, BinaryTree, BinarySearchTree
 
 def test_pre_order():
     tree = BinaryTree()
