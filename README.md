@@ -34,3 +34,4 @@ To run your tests
 - [Class 13: Stack, Queue, Brackets](./python/docs/stack_queue_brackets/README.md)
 - [Class 15: Trees](./python/docs/trees/README.md)
 - [Class 16: Tree Max](./python/docs/trees/README.md)
+- [Class 17: Tree Max](./python/docs/tree_breadth_first/README.md)
