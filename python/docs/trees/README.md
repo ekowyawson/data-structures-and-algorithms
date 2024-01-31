@@ -31,10 +31,6 @@ The `BinaryTree` class implements standard **depth-first** traversals, essential
 - **add**: Inserts a value into the tree, maintaining the binary search tree property.
 - **contains**: Checks if a value is present in the tree.
 
-### Find Maximum Value Tests
-
-- **return**: Element with largest value.
-
 ### Big O Space/Time Complexity
 
 - **BinaryTree Traversal**
