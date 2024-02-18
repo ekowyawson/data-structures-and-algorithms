@@ -6,6 +6,11 @@ Design and implement a `Hashtable` class in Python that efficiently manages **ke
 
 [Link to code](../../data_structures/hashtable.py)
 
+## Collaborators
+
+> Stephanie Johnson
+> Latherio Kidd
+
 ## Whiteboard Process
 
 N/A
