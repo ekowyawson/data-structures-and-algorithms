@@ -36,3 +36,4 @@ To run your tests
 - [Class 16: Tree Max](./python/docs/trees/README.md)
 - [Class 17: Tree Max](./python/docs/tree_breadth_first/README.md)
 - [Class 18: Tree Fizz Buzz](./python/docs/tree_fizz_buzz/README.md)
+- [Class 30: Tree Fizz Buzz](./python/docs/hashtable/README.md)
