@@ -36,4 +36,6 @@ To run your tests
 - [Class 16: Tree Max](./python/docs/trees/README.md)
 - [Class 17: Tree Max](./python/docs/tree_breadth_first/README.md)
 - [Class 18: Tree Fizz Buzz](./python/docs/tree_fizz_buzz/README.md)
-- [Class 30: Tree Fizz Buzz](./python/docs/hashtable/README.md)
+- [Class 30: Hashtable](./python/docs/hashtable/README.md)
+- [Class 31: Hashmap Repeated Word](./python/docs/hashmap_repeated_word/README.md)
+- [Class 32: Tree Intersection](./python/docs/tree_intersection/README.md)
