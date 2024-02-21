@@ -13,7 +13,7 @@ Develop a Python function that takes two dictionaries as input: one representing
 
 ## Whiteboard Process
 
-N/A
+![Whiteboard](./hashtable-left-join.png)
 
 ## Approach & Efficiency
 
