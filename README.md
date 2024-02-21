@@ -39,3 +39,4 @@ To run your tests
 - [Class 30: Hashtable](./python/docs/hashtable/README.md)
 - [Class 31: Hashmap Repeated Word](./python/docs/hashmap_repeated_word/README.md)
 - [Class 32: Tree Intersection](./python/docs/tree_intersection/README.md)
+- [Class 33: Hashtable Left Join](./python/docs/hashtable_left_join/README.md)
