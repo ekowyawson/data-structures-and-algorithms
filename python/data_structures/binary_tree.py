@@ -1,6 +1,6 @@
 class BinaryTree:
     """Binary tree class for creating and traversing binary trees."""
-    def __init__(self):
+    def __init__(self, node=None):
         """Initializes an empty binary tree."""
         self.root = None
 

@@ -17,7 +17,8 @@ class Hashtable:
         :param `key`: The key to hash.
         :returns: An integer representing the hash value of the key.
         """
-        return sum(ord(char) for char in key) % self.size
+        key_str = str(key)  # Convert the key to a string
+        return sum(ord(char) for char in key_str) % self.size
 
     def set(self, key, value):
         """Sets a key-value pair in the hashtable. If the key already exists,
