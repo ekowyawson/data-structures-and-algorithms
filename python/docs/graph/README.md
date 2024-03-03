@@ -4,11 +4,11 @@
 
 Implement a Graph class. The Graph should be represented as an adjacency list, and should include methods to:
 
-1. Add a vertex/node to the graph.
-2. Add a new edge between two vertices in the graph.
-3. Return all of the vertices in the graph as a collection (set, list, or similar).
-4. Return a collection of edges connected to the given vertex/node including the weight of the connection.
-5. Return the total number of vertices in the graph.
+- Add a vertex/node to the graph.
+- Add a new edge between two vertices in the graph.
+- Return all of the vertices in the graph as a collection (set, list, or similar).
+- Return a collection of edges connected to the given vertex/node including the weight of the connection.
+- Return the total number of vertices in the graph.
 
 [Link to code](../../data_structures/graph.py)
 
