@@ -40,3 +40,6 @@ To run your tests
 - [Class 31: Hashmap Repeated Word](./python/docs/hashmap_repeated_word/README.md)
 - [Class 32: Tree Intersection](./python/docs/tree_intersection/README.md)
 - [Class 33: Hashtable Left Join](./python/docs/hashtable_left_join/README.md)
+- [Class 35: Graph](./python/docs/graph/README.md)
+- [Class 36: Graph Breadth First](./python/docs/graph_breadth_first/README.md)
+- [Class 37: Graph Business Trip](./python/docs/graph_business_trip/README.md)
